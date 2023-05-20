@@ -1,0 +1,46 @@
+body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.editor {
+    margin: 20px auto;
+    width: 80%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.toolbar {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.toolbar button, .toolbar select, .toolbar input {
+    margin-right: 5px;
+}
+
+.text-container {
+    padding: 10px;
+    min-height: 200px;
+    border-top: 1px solid #ccc;
+}
+
+#editor-area {
+    outline: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
+}

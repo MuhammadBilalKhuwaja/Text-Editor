@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Editor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="editor">
+        <div class="toolbar">
+            <button onclick="boldText()"><strong>B</strong></button>
+            <button onclick="italicizeText()"><em>I</em></button>
+            <button onclick="underlineText()"><u>U</u></button>
+            <select onchange="changeTextAlignment(this.value)">
+                <option value="left">Left</option>
+                <option value="center">Center</option>
+                <option value="right">Right</option>
+            </select>
+            <input type="color" onchange="changeTextColor(this.value)">
+            <input type="number" min="10" max="100" value="16" onchange="changeTextSize(this.value)">
+        </div>
+        <div class="text-container">
+            <div id="editor-area" contenteditable="true"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
